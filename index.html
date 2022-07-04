@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./canvas.css" />
+    <link rel="stylesheet" href="./nguoi.css" />
+    <link rel="stylesheet" href="./box.css" />
+    <link rel="stylesheet" href="./nguoi.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <canvas id="c"> </canvas>
+      <p>
+        To Thảo Móm<meta /><span
+          >, by
+          <a href="https://www.facebook.com/leductuan2207">Đức Tuấn</a></span
+        >
+      </p>
+      <div class="troll">
+        <div class="troll__head">
+          <img
+            class="troll__face"
+            src="https://i.ibb.co/8XVN8CW/trollface.png"
+            srcset="
+              https://i.ibb.co/8XVN8CW/trollface.png    1x,
+              https://i.ibb.co/DW8Byny/trollface-2x.png 2x
+            "
+            alt="Trollface"
+            width="140"
+            height="115"
+          />
+          <div class="troll__right-arm">
+            <div class="troll__right-lower-arm">
+              <div class="troll__right-hand"></div>
+            </div>
+          </div>
+          <div class="troll__left-arm">
+            <div class="troll__left-lower-arm">
+              <div class="troll__left-hand"></div>
+            </div>
+          </div>
+          <div class="troll__upper-body">
+            <div class="troll__lower-body">
+              <div class="troll__right-thigh">
+                <div class="troll__right-lower-leg">
+                  <div class="troll__right-foot"></div>
+                </div>
+              </div>
+              <div class="troll__left-thigh">
+                <div class="troll__left-lower-leg">
+                  <div class="troll__left-foot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="above-fold">
+        <div class="wrap-present">
+          <div class="present-box" id="present">
+            <div class="present">
+              <div class="img-wrap" id="present-image"></div>
+            </div>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top">
+              <span class="to">
+                <span class="name" id="nametag"> </span>
+              </span>
+            </div>
+            <div class="side bottom"></div>
+          </div>
+        </div>
+        <p class="info-text">Ấn vô đây đi em</p>
+      </section>
+      <audio id="divAudio" autoplay>
+        <source
+          src="./audio/ChucMungSinhNhat-PhanDinhTung-2804028.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
+  </body>
+  <script src="./canvas.js"></script>
+  <!-- <script src="./nhac.js"></script> -->
+  <script src="./box.js"></script>
+  <script>
+    document.addEventListener("click", musicPlay);
+    function musicPlay() {
+      document.getElementById("divAudio").play();
+    }
+  </script>
+</html>
