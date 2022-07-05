@@ -32,3 +32,13 @@
     transform: translateY(310px);
   }
 }
+@media (max-width: 740px) {
+  .above-fold {
+    perspective: 200px;
+    perspective-origin: 50% 100px;
+    margin: 0 auto;
+  }
+  .wrap-present {
+    transform: translateY(310px);
+  }
+}
